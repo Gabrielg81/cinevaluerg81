@@ -20,7 +20,14 @@ const MovieCard:NextComponentType = () => {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+
+                <NextLink href={{
+                        pathname: `/form/`,
+                        query: {slug: movie.id}
+                    }}
+                >
+                    <div className="btn btn-primary dsmovie-btn">Avaliar</div>
+                </NextLink>
             </div>
         </div>
     </C.MovieCard>

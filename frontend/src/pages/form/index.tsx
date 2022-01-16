@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import NextLink from 'next/link'
 import Head from 'next/head';
 import * as C from './styles'
 
@@ -44,7 +45,9 @@ const FormPage: NextPage = () => {
                             <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
                         </div>
                     </form >
-                    <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                    <NextLink href="/">
+                        <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                    </NextLink>
                 </div >
             </div >
 
