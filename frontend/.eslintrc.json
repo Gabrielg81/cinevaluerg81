@@ -6,10 +6,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
-        "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
-        "prettier/react"
+        "airbnb"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -22,17 +20,9 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "@typescript-eslint",
         "prettier"
     ],
     "rules": {
-        "import/no-unresolved": "error",
-        "prettier/prettier": "error",
-        "space-before-function-paren": "off",
-        "reactprop-types": "off"
-    },
-    "settings": {
-        "import/resolver": {"typescript": {}
-        }
+        "prettier/prettier": "error"
     }
 }
