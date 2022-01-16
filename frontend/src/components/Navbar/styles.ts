@@ -17,6 +17,7 @@ export const Navbar = styled.div`
     font-size: 24px;
     margin: 0;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .dsmovie-contact-container {

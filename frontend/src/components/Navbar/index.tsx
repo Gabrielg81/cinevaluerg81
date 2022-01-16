@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import NextLink from 'next/link'
 import * as C from './styles'
 
 import  GithubIcon from '../../assets/img/github.svg'
@@ -8,7 +9,7 @@ const Navbar:NextPage = () => {
     <C.Navbar>
         <nav className="container">
             <div className="dsmovie-nav-content">
-                <h1>DSMovie</h1>
+                <NextLink href={'/'} ><h1>Filmes e Séries G81</h1></NextLink>
                 <a
                     href="https://github.com/g81tech"
                     target="_blank"

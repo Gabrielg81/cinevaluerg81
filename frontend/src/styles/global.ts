@@ -18,5 +18,6 @@ export default createGlobalStyle`
   a, a:hover {
     text-decoration: none;
     color: ${props => props.theme.colors.secondary};
+    cursor: pointer;
   }
 `
