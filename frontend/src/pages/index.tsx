@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import MovieCard from '../components/MovieCard';
 import Pagination from '../components/Pagination';
 import * as C from './style.Index'
 
@@ -23,6 +24,15 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Pagination />
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                        <MovieCard />
+                    </div>
+
+                </div>
+            </div>
+
         </C.Listing>
   )
 }
