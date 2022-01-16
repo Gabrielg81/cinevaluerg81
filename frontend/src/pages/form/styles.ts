@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Form = styled.div`
+const Form = styled.div`
 
     .dsmovie-form-container {
         max-width: 480px;
@@ -61,3 +61,4 @@ export const Form = styled.div`
         justify-content: center;
     }
 `
+export default Form

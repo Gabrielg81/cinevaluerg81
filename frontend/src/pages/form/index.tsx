@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import NextLink from 'next/link'
 import Head from 'next/head';
-import * as C from './styles'
+import Form from './styles'
 
 const FormPage: NextPage = () => {
     const movie = {
@@ -13,7 +13,7 @@ const FormPage: NextPage = () => {
     };
 
     return (
-        <C.Form>
+        <Form>
             <Head>
                 <title>Avaliar | Filmes e séries G81</title>
                 <meta
@@ -51,7 +51,7 @@ const FormPage: NextPage = () => {
                 </div >
             </div >
 
-        </C.Form>
+        </Form>
   )
 }
 

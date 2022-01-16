@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import MovieCard from '../components/MovieCard';
-import Pagination from '../components/Pagination';
-import * as C from './style.Index'
+import Pagination from '../components/Pagination'
+import Listing from './styles'
 
 const Home: NextPage = () => {
     const movie = {
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     };
 
     return (
-        <C.Listing>
+        <Listing>
             <Head>
                 <title>Filmes e séries G81</title>
                 <meta
@@ -33,8 +33,8 @@ const Home: NextPage = () => {
                 </div>
             </div>
 
-        </C.Listing>
-  )
+        </Listing>
+    )
 }
 
 export default Home;

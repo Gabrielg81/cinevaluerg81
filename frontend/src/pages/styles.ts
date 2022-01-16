@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Listing = styled.div`
+const Listing = styled.div`
 
     .dsmovie-form-container {
         max-width: 480px;
@@ -61,3 +61,4 @@ export const Listing = styled.div`
         justify-content: center;
     }
 `
+export default Listing
