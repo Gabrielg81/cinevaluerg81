@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Pagination from '../components/Pagination';
 import * as C from './style.Index'
 
 const Home: NextPage = () => {
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
+            <Pagination />
         </C.Listing>
   )
 }

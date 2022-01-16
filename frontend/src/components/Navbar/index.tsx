@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
+import type { NextComponentType } from 'next'
 import NextLink from 'next/link'
 import * as C from './styles'
 
 import  GithubIcon from '../../assets/img/github.svg'
 
-const Navbar:NextPage = () => {
+const Navbar:NextComponentType = () => {
     return (
     <C.Navbar>
         <nav className="container">
