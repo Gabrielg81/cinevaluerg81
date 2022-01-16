@@ -1,9 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from '../components/Navbar';
 
-const Home: NextPage = () => {
+const Listing: NextPage = () => {
   return (
         <>
             <Head>
@@ -14,9 +12,9 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
+            <h1>Listing</h1>
         </>
   )
 }
 
-export default Home;
+export default Listing;

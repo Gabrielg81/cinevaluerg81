@@ -1,10 +1,21 @@
-import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'styled-components'
+
 import 'bootstrap/dist/css/bootstrap.css';
 
-import type { AppProps } from 'next/app'
+import GlobalStyle from '../styles/global'
+import theme from '../styles/theme'
+
+import Navbar from '../components/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+    return(
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Navbar />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    )
+  }
 
 export default MyApp
