@@ -22,4 +22,6 @@ public class ScoreController {
 		MovieDTO movieDTO = service.saveScore(dto);
 		return movieDTO;
 	}
+	
+	//Aqui faz o de postar um filme
 }
